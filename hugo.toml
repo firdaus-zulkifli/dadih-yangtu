@@ -1,0 +1,10 @@
+baseURL = 'http://localhost:1313/'
+languageCode = 'ms-my'
+title = 'Dadih YangTu - Dadih Susu Berkrim & Berlemak'
+
+[params]
+  description = "Dadih susu paling berkrim di Permatang Pauh, Seberang Jaya, Perda, Bukit Mertajam & Penang. Sesuai untuk jamuan sekolah, kenduri, dan infak. Tempah sekarang melalui WhatsApp!"
+  # YOUR WHATSAPP LINK HERE
+  whatsapp_link = "https://is.gd/DadihYangTu" 
+  phone_display = "013-766 2785"
+  location = "Residensi Pauh Permai, Permatang Pauh, Penang"

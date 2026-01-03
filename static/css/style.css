@@ -1,0 +1,213 @@
+/* General Reset */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff; /* Pure white background */
+    color: #222222; /* Almost black for softer reading */
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #ffffff; /* White background */
+    padding: 60px 20px 40px; /* More padding for a cleaner look */
+    /* Removed the border-bottom for a seamless flow */
+}
+
+.logo {
+    width: 180px; /* Slightly larger logo */
+    height: auto;
+    margin-bottom: 30px;
+}
+
+h1 {
+    color: #000000; /* Pure black for main headline */
+    margin-bottom: 15px;
+    font-size: 2.2rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.subtitle {
+    font-size: 1.3rem;
+    color: #555555; /* Dark gray for subtitle */
+    margin-bottom: 40px;
+    font-weight: 300;
+}
+
+/* Buttons */
+.cta-button {
+    display: inline-block;
+    /* A rich, appetizing caramel/gold color for the button */
+    background-color: #D4AF37;
+    color: white;
+    padding: 15px 35px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    box-shadow: 0 4px 10px rgba(212, 175, 55, 0.3); /* Soft gold shadow */
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    transform: translateY(-3px);
+    background-color: #C19B2E; /* Slightly darker on hover */
+    box-shadow: 0 6px 15px rgba(212, 175, 55, 0.4);
+}
+
+/* Make the secondary button the same for consistency, or a dark outline */
+.cta-button.secondary {
+    background-color: #222222; /* Dark charcoal for contrast */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+.cta-button.secondary:hover {
+    background-color: #000000;
+}
+
+
+/* Images */
+.showcase {
+    margin-top: -20px; /* Pull image up slightly */
+    margin-bottom: 50px;
+}
+
+.showcase img {
+    width: 100%;
+    max-width: 700px; /* Limit maximum width */
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1); /* Softer, larger shadow for depth */
+}
+
+/* Section Headings */
+section h2 {
+    font-size: 1.8rem;
+    color: #000000;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Pricing */
+.price-cards {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    padding: 30px 20px;
+    border-radius: 15px;
+    border: 1px solid #eeeeee; /* Very light border */
+    width: 220px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: #D4AF37;
+}
+
+.card h3 {
+    margin-top: 0;
+    color: #555;
+    font-size: 1.1rem;
+}
+
+.card.highlight {
+    border: 2px solid #D4AF37; /* Gold border for highlight */
+    background-color: #fffcf5; /* Very faint gold tint */
+    position: relative; /* For badge positioning */
+}
+
+.price {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #000000;
+    margin: 15px 0;
+}
+
+.badge {
+    background: #D4AF37; /* Gold badge */
+    color: white;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.note {
+    margin-top: 30px;
+    color: #777;
+    font-size: 0.95rem;
+}
+
+/* Check list */
+.features {
+    margin: 60px auto;
+}
+.check-list {
+    list-style: none;
+    padding: 0;
+    font-size: 1.2rem;
+    display: inline-block;
+    text-align: left;
+}
+
+.check-list li {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+/* Add a gold color to the checkmark emoji if possible, or just leave it */
+
+
+/* Infak Box */
+.infak {
+    margin-bottom: 60px;
+}
+.infak-box {
+    background: #f9f9f9; /* Light gray background instead of brown */
+    padding: 40px;
+    border-radius: 20px;
+    color: #222;
+    border: 2px dashed #ddd; /* Dashed border for a "special section" feel */
+}
+
+.infak-box h2 {
+    color: #000000;
+    margin-top: 0;
+}
+
+/* Footer */
+footer {
+    background: #111111; /* Almost black */
+    color: #aaaaaa; /* Light gray text */
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 60px;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #D4AF37; /* Gold link color */
+    text-decoration: none;
+    font-weight: bold;
+}

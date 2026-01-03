@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ .Site.Title }}</title>
+    <meta name="description" content="{{ .Site.Params.description }}">
+    
+    <link rel="stylesheet" href="/css/style.css">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Dadih YangTu",
+      <!--"image": "https://placehold.co/600x600?text=Dadih+YangTu+Logo",-->
+      "image": "{{ "images/dadihAsliBatch.jpg" | absURL }}",
+      "telephone": "{{ .Site.Params.phone_display }}",
+      "priceRange": "RM3 - RM10",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Permatang Pauh",
+        "addressRegion": "Penang",
+        "addressCountry": "MY"
+      },
+      "url": "{{ .Site.BaseURL }}"
+    }
+    </script>
+</head>
+<body>
+
+    <header class="hero">
+        <div class="container">
+            <img src="/images/croppedLogoDadihMinimalist.png" alt="Dadih YangTu Logo" class="logo">
+            <h1>DADIH BERKRIM & BERLEMAK!</h1>
+            <p class="subtitle">Sekali rasa, esok anak mesti minta lagi!</p>
+            <a href="{{ .Site.Params.whatsapp_link }}" class="cta-button">Tempah Sekarang (WhatsApp)</a>
+        </div>
+    </header>
+
+    <section class="showcase container">
+    <img src="/images/dadihAsliBatch.jpg" alt="Dadih Susu Berlemak dalam bekas">
+</section>
+
+    <section class="pricing container">
+        <h2>Harga Kami</h2>
+        <div class="price-cards">
+            <div class="card">
+                <h3>1 Bekas</h3>
+                <p class="price">RM3</p>
+                <p class="desc">Original Susu (Lemak Manis)</p>
+            </div>
+            <div class="card highlight">
+                <h3>KOMBO JIMAT</h3>
+                <p class="price">RM10</p>
+                <p class="desc">Dapat 4 Bekas!</p>
+                <span class="badge">Lagi Jimat!</span>
+            </div>
+        </div>
+        <p class="note">🧊 Saiz 8oz | Lagi sejuk, lagi padu!</p>
+    </section>
+
+    <section class="features container">
+        <h2>Sesuai Untuk Apa?</h2>
+        <ul class="check-list">
+            <li>✅ Jamuan Sekolah / Kelas</li>
+            <li>✅ Kenduri & Majlis</li>
+            <li>✅ Rehat santai seisi keluarga</li>
+        </ul>
+    </section>
+
+    <section class="infak container">
+        <div class="infak-box">
+            <h2>🤍 Slot Infak Dibuka</h2>
+            <p>Sesuai untuk sedekah ke Tahfiz atau Rumah Kebajikan. Anda order, kami hantarkan!</p>
+            <a href="{{ .Site.Params.whatsapp_link }}" class="cta-button secondary">Hubungi Untuk Infak</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>Lokasi: {{ .Site.Params.location }}</p>
+        <p>WhatsApp: <a href="{{ .Site.Params.whatsapp_link }}">{{ .Site.Params.phone_display }}</a></p>
+        <p>&copy; 2026 Dadih YangTu</p>
+    </footer>
+
+</body>
+</html>
