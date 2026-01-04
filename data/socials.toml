@@ -11,7 +11,7 @@
 # --- LOCATION / REVIEWS ---
 [[links]]
   name = "Lokasi Kami (Google Maps)"
-  url = "#YOUR_GOOGLE_MAPS_LINK"
+  url = "https://maps.app.goo.gl/SnQzS9kMoRoXWuvb7"
   icon_class = "google"
   available = true
   priority = false

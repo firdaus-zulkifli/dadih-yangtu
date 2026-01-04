@@ -120,7 +120,7 @@
 
     <section class="infak container">
         <div class="infak-box">
-            <h2>🤍 Slot Infak Dibuka</h2>
+            <h2>💗 Slot Infak Tersedia</h2>
             <p>Sesuai untuk sedekah ke Tahfiz atau Rumah Kebajikan. Anda order, kami hantarkan!</p>
             <a href="{{ .Site.Params.whatsapp_link }}" class="cta-button secondary">Hubungi Untuk Infak</a>
         </div>
@@ -146,6 +146,20 @@
             {{ end }}
         </div>
     </section>
+
+    <div class="mobile-sticky-bar">
+        <a href="{{ .Site.Params.whatsapp_link }}" target="_blank" class="sticky-btn whatsapp-sticky">
+            <span class="icon">📞</span>
+            <span class="label">Order Now</span>
+        </a>
+
+        {{ with (index .Site.Data.socials.links 1) }}
+        <a href="{{ .url }}" target="_blank" class="sticky-btn">
+            <span class="icon">📍</span>
+            <span class="label">Lokasi</span>
+        </a>
+        {{ end }}
+    </div>
 
     <footer>
         <p>Lokasi: {{ .Site.Params.location }}</p>

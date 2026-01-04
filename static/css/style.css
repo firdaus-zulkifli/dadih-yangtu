@@ -285,6 +285,62 @@ LinkTree Section Styling
 .link-btn.google:hover { background-color: #4285F4; color: white; border-color: #4285F4;}
 .link-btn.waze:hover { background-color: #33ccff; color: white; border-color: #33ccff;}
 
+/* ===========================
+ *  Sticky Mobile Navigation
+ = *========================== */
+.mobile-sticky-bar {
+    position: fixed; /* Stays in one place */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-around; /* Spread buttons evenly */
+    align-items: center;
+    padding: 10px 5px;
+    box-shadow: 0 -2px 15px rgba(0,0,0,0.1); /* Shadow pointing up */
+    z-index: 1000; /* Ensure it sits on top of everything else */
+    border-top: 1px solid #eee;
+}
+
+.sticky-btn {
+    text-decoration: none;
+    color: #555;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.8rem;
+    flex-grow: 1; /* Make buttons take up equal space */
+}
+
+.sticky-btn .icon {
+    font-size: 1.4rem;
+    margin-bottom: 2px;
+}
+
+/* Highlight the Order button */
+.sticky-btn.whatsapp-sticky {
+    color: #25D366;
+    font-weight: bold;
+}
+
+/* Adjust body padding so the footer doesn't get stuck behind the bar on mobile */
+@media (max-width: 768px) {
+    body {
+        padding-bottom: 70px;
+    }
+}
+
+/* ===========================
+ *  CRITICAL: HIDE ON DESKTOP
+ = *========================== */
+/* If screen is wider than 768px (tablet/laptop), hide the bar */
+@media (min-width: 769px) {
+    .mobile-sticky-bar {
+        display: none !important;
+    }
+}
+
 /* Footer */
 footer {
     background: #111111; /* Almost black */
