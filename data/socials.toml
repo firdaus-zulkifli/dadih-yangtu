@@ -3,45 +3,51 @@
 # --- SALES CHANNELS ---
 [[links]]
   name = "Order WhatsApp Sekarang"
-  url = "https://is.gd/DadihYangTu"
+  url = "https://api.whatsapp.com/send/?phone=60137662785&text=Salam+Hi%2C+nak+order+dadih+creamy+boleh%3F&type=phone_number&app_absent=0"
   icon_class = "whatsapp" # Used for styling later
+  icon_file = "whatsapp.svg"
   available = true
   priority = true # To highlight it
 
 # --- LOCATION / REVIEWS ---
 [[links]]
-  name = "Lokasi Kami (Google Maps)"
+  name = "Google Maps"
   url = "https://maps.app.goo.gl/SnQzS9kMoRoXWuvb7"
   icon_class = "google"
+  icon_file = "map.svg"
   available = true
   priority = false
 
 [[links]]
-  name = "Waze ke Residensi Pauh Permai"
-  url = "#YOUR_WAZE_LINK"
+  name = "Waze"
+  url = "https://waze.com/ul/hw0zqtjfbq"
   icon_class = "waze"
+  icon_file = "waze.svg"
   available = true
   priority = false
 
 # --- SOCIAL MEDIA ---
 [[links]]
-  name = "Facebook Page (Update Harian)"
+  name = "Facebook"
   url = "https://facebook.com/HouseOfDadih"
   icon_class = "facebook"
+  icon_file = "facebook.svg"
   available = true
   priority = false
 
 [[links]]
-  name = "TikTok (Video Viral)"
+  name = "TikTok"
   url = "#YOUR_TIKTOK_LINK"
   icon_class = "tiktok"
+  icon_file = "tiktok.svg"
   available = true
   priority = false
 
 [[links]]
-  name = "Instagram (Galeri)"
+  name = "Instagram"
   url = "#YOUR_IG_LINK"
   icon_class = "instagram"
+  icon_file = "instagram.svg"
   available = true
   priority = false
 
@@ -49,5 +55,6 @@
   name = "Threads"
   url = "#YOUR_THREADS_LINK"
   icon_class = "threads"
+  icon_file = "threads.svg"
   available = true
   priority = false

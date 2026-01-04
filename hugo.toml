@@ -1,10 +1,10 @@
 baseURL = 'http://localhost:1313/'
 languageCode = 'ms-my'
-title = 'Dadih YangTu - Dadih Susu Berkrim & Berlemak'
+title = 'House of Dadih - Dadih Susu Berkrim & Berlemak'
 
 [params]
   description = "Dadih susu asli paling berkrim dan berlemak di Permatang Pauh dan sekitar Seberang Perai, Penang. Pilihan utama untuk jamuan, kenduri, dan infak. Tempah online sekarang!"
   # YOUR WHATSAPP LINK HERE
-  whatsapp_link = "https://is.gd/DadihYangTu" 
+  whatsapp_link = "https://api.whatsapp.com/send/?phone=60137662785&text=Salam+Hi%2C+nak+order+dadih+creamy+boleh%3F&type=phone_number&app_absent=0"
   phone_display = "013-766 2785"
   location = "Residensi Pauh Permai, Permatang Pauh, Penang"

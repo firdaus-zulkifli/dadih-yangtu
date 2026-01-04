@@ -235,19 +235,32 @@ LinkTree Section Styling
     margin: 0 auto; /* Center the whole block */
 }
 
-/* Base Button Style */
+/* Updated Base Button Style to hold icon and text */
 .link-btn {
-    display: block;
+    /* Change from 'block' to 'flex' to align items side-by-side */
+    display: flex;
+    align-items: center;     /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    gap: 12px;               /* Space between icon and text */
+
     padding: 15px 20px;
-    background-color: #f0f0f0; /* Default light gray */
+    background-color: #f0f0f0;
     color: #333;
     text-decoration: none;
-    border-radius: 50px; /* Pill shape */
+    border-radius: 50px;
     font-weight: 600;
     text-align: center;
-    transition: transform 0.2s, box-shadow 0.2s, background-color 0.3s;
-    border: 2px solid transparent; /* For hover effects */
+    transition: transform 0.2s, box-shadow 0.2s, background-color 0.3s, color 0.3s;
+    border: 2px solid transparent;
     box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+/* NEW Styles for the icon image */
+.btn-icon {
+    width: 24px;  /* Keep them all a consistent size */
+    height: 24px;
+    object-fit: contain; /* Ensure they don't stretch weirdly */
+    transition: filter 0.3s; /* Smooth transition for color change on hover */
 }
 
 .link-btn:hover {

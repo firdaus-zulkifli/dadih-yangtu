@@ -31,7 +31,7 @@
 
     <header class="hero">
         <div class="container">
-            <img src="/images/croppedLogoDadihMinimalist.png" alt="Dadih YangTu Logo" class="logo">
+            <img src="/images/HouseOfDadihLogo.png" alt="Dadih YangTu Logo" class="logo">
             <h1>DADIH BERKRIM & BERLEMAK!</h1>
             <p class="subtitle">Sekali rasa, esok anak mesti minta lagi!</p>
             <a href="{{ .Site.Params.whatsapp_link }}" class="cta-button">Tempah Sekarang (WhatsApp)</a>
@@ -140,7 +140,10 @@
                 {{ if .available }}
                 <a href="{{ .url }}" target="_blank" rel="noopener noreferrer"
                    class="link-btn {{ .icon_class }} {{ if .priority }}priority-btn{{ end }}">
-                    {{ .name }}
+
+                    <img src="/icons/{{ .icon_file }}" alt="{{ .name }} logo" class="btn-icon">
+
+                    <span class="btn-text">{{ .name }}</span>
                 </a>
                 {{ end }}
             {{ end }}
@@ -149,7 +152,7 @@
 
     <div class="mobile-sticky-bar">
         <a href="{{ .Site.Params.whatsapp_link }}" target="_blank" class="sticky-btn whatsapp-sticky">
-            <span class="icon">📞</span>
+            <span class="icon">💬</span>
             <span class="label">Order Now</span>
         </a>
 
