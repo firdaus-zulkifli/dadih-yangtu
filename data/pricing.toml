@@ -1,0 +1,50 @@
+# =========================================
+# SET 1: ORIGINAL (RM3 / 4 for RM10)
+# =========================================
+
+# The individual item
+[original_single]
+  name = "Original Susu"
+  description = "(Lemak Manis)"
+  price = "RM3"
+  # Change to 'false' to hide this item from the website
+  available = true
+
+# The combo deal
+[original_combo]
+  name = "KOMBO ORIGINAL"
+  description = "Dapat 4 Bekas Original!"
+  price = "RM10"
+  badge_text = "LAGI JIMAT!"
+  # Change to 'false' to hide this item from the website
+  available = true
+
+
+# =========================================
+# SET 2: PREMIUM (Strawberry & Milo - RM3.50 / 3 for RM10)
+# =========================================
+
+# --- Strawberi ---
+[strawberry_single]
+  name = "Dadih Strawberi"
+  description = "(Masam Manis Segar!)"
+  price = "RM3.50"
+  # Change to 'false' if out of stock!
+  available = true
+
+# --- Milo ---
+[milo_single]
+  name = "Dadih Milo"
+  description = "(Rasa Coklat Padu)"
+  price = "RM3.50"
+  # EXAMPLE: Set to 'false' to hide it because it's out of stock
+  available = true
+
+# --- Premium Combo Deal ---
+[premium_combo]
+  name = "KOMBO PREMIUM"
+  description = "Dapat 3 Bekas"
+  price = "RM10"
+  badge_text = "NEW! JIMAT"
+  # Change to 'false' to hide
+  available = true

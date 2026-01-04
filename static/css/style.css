@@ -218,6 +218,73 @@ section h2 {
     margin-top: 0;
 }
 
+* ===========================
+LinkTree Section Styling
+=========================== */
+.link-tree-section {
+    margin-bottom: 60px;
+    padding-top: 20px;
+    border-top: 1px solid #eee; /* Subtle separator */
+}
+
+.link-buttons-grid {
+    display: flex;
+    flex-direction: column; /* Stack them vertically like Linktree */
+    gap: 15px;
+    max-width: 450px; /* Don't let them get too wide on desktop */
+    margin: 0 auto; /* Center the whole block */
+}
+
+/* Base Button Style */
+.link-btn {
+    display: block;
+    padding: 15px 20px;
+    background-color: #f0f0f0; /* Default light gray */
+    color: #333;
+    text-decoration: none;
+    border-radius: 50px; /* Pill shape */
+    font-weight: 600;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s, background-color 0.3s;
+    border: 2px solid transparent; /* For hover effects */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.link-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Priority Button Highlight (e.g., WhatsApp) */
+.link-btn.priority-btn {
+    border-color: #D4AF37; /* Gold border */
+    background-color: #fffcf5;
+}
+
+/* --- BRAND COLORS ON HOVER --- */
+
+/* WhatsApp */
+.link-btn.whatsapp:hover { background-color: #25D366; color: white; border-color: #25D366;}
+
+/* Facebook */
+.link-btn.facebook:hover { background-color: #1877F2; color: white; border-color: #1877F2;}
+
+/* TikTok (Black/Pinkish accent) */
+.link-btn.tiktok:hover { background-color: #000000; color: #ff0050; border-color: #000000;}
+
+/* Instagram (Gradient background trick) */
+.link-btn.instagram:hover {
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    color: white;
+}
+
+/* Threads (Black) */
+.link-btn.threads:hover { background-color: #000000; color: white; border-color: #000000;}
+
+/* Google/Waze (Blue/Light Blue) */
+.link-btn.google:hover { background-color: #4285F4; color: white; border-color: #4285F4;}
+.link-btn.waze:hover { background-color: #33ccff; color: white; border-color: #33ccff;}
+
 /* Footer */
 footer {
     background: #111111; /* Almost black */

@@ -1,0 +1,53 @@
+# data/socials.toml
+
+# --- SALES CHANNELS ---
+[[links]]
+  name = "Order WhatsApp Sekarang"
+  url = "https://is.gd/DadihYangTu"
+  icon_class = "whatsapp" # Used for styling later
+  available = true
+  priority = true # To highlight it
+
+# --- LOCATION / REVIEWS ---
+[[links]]
+  name = "Lokasi Kami (Google Maps)"
+  url = "#YOUR_GOOGLE_MAPS_LINK"
+  icon_class = "google"
+  available = true
+  priority = false
+
+[[links]]
+  name = "Waze ke Residensi Pauh Permai"
+  url = "#YOUR_WAZE_LINK"
+  icon_class = "waze"
+  available = true
+  priority = false
+
+# --- SOCIAL MEDIA ---
+[[links]]
+  name = "Facebook Page (Update Harian)"
+  url = "https://facebook.com/HouseOfDadih"
+  icon_class = "facebook"
+  available = true
+  priority = false
+
+[[links]]
+  name = "TikTok (Video Viral)"
+  url = "#YOUR_TIKTOK_LINK"
+  icon_class = "tiktok"
+  available = true
+  priority = false
+
+[[links]]
+  name = "Instagram (Galeri)"
+  url = "#YOUR_IG_LINK"
+  icon_class = "instagram"
+  available = true
+  priority = false
+
+[[links]]
+  name = "Threads"
+  url = "#YOUR_THREADS_LINK"
+  icon_class = "threads"
+  available = true
+  priority = false

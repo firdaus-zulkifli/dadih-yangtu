@@ -52,21 +52,61 @@
 
     <section class="pricing container">
         <h2>Harga Kami</h2>
+
+        <h3 style="margin-top: 40px; color: #555;">Siri Original</h3>
         <div class="price-cards">
+
+            {{ if .Site.Data.pricing.original_single.available }}
             <div class="card">
-                <h3>1 Bekas</h3>
-                <p class="price">RM3</p>
-                <p class="desc">Original Susu (Lemak Manis)</p>
+                <h3>{{ .Site.Data.pricing.original_single.name }}</h3>
+                <p class="price">{{ .Site.Data.pricing.original_single.price }}</p>
+                <p class="desc">{{ .Site.Data.pricing.original_single.description }}</p>
             </div>
+            {{ end }}
+
+            {{ if .Site.Data.pricing.original_combo.available }}
             <div class="card highlight">
-                <h3>KOMBO JIMAT</h3>
-                <p class="price">RM10</p>
-                <p class="desc">Dapat 4 Bekas!</p>
-                <span class="badge">Lagi Jimat!</span>
+                <span class="badge">{{ .Site.Data.pricing.original_combo.badge_text }}</span>
+                <h3>{{ .Site.Data.pricing.original_combo.name }}</h3>
+                <p class="price">{{ .Site.Data.pricing.original_combo.price }}</p>
+                <p class="desc">{{ .Site.Data.pricing.original_combo.description }}</p>
             </div>
+            {{ end }}
         </div>
-        <p class="note">🧊 Saiz biasa 8oz | Lagi sejuk, lagi padu!</p>
-        <p class="note">⚖️ Turut hadir dengan saiz 4oz atau 6oz untuk pesanan pukal</p>
+
+
+        {{ if or (.Site.Data.pricing.strawberry_single.available) (.Site.Data.pricing.milo_single.available) }}
+        <h3 style="margin-top: 50px; color: #D4AF37;">Siri Premium (Baru!)</h3>
+        {{ end }}
+
+        <div class="price-cards">
+
+            {{ if .Site.Data.pricing.strawberry_single.available }}
+            <div class="card" style="border-color: #ffadd2;"> <h3>{{ .Site.Data.pricing.strawberry_single.name }}</h3>
+                <p class="price">{{ .Site.Data.pricing.strawberry_single.price }}</p>
+                <p class="desc">{{ .Site.Data.pricing.strawberry_single.description }}</p>
+            </div>
+            {{ end }}
+
+            {{ if .Site.Data.pricing.milo_single.available }}
+            <div class="card" style="border-color: #946c45;"> <h3>{{ .Site.Data.pricing.milo_single.name }}</h3>
+                <p class="price">{{ .Site.Data.pricing.milo_single.price }}</p>
+                <p class="desc">{{ .Site.Data.pricing.milo_single.description }}</p>
+            </div>
+            {{ end }}
+
+             {{ if .Site.Data.pricing.premium_combo.available }}
+            <div class="card highlight">
+                <span class="badge" style="background-color: #222;">{{ .Site.Data.pricing.premium_combo.badge_text }}</span>
+                <h3>{{ .Site.Data.pricing.premium_combo.name }}</h3>
+                <p class="price">{{ .Site.Data.pricing.premium_combo.price }}</p>
+                <p class="desc">{{ .Site.Data.pricing.premium_combo.description }}</p>
+            </div>
+            {{ end }}
+        </div>
+
+        <p class="note" style="margin-top: 40px;">🧊 Saiz 8oz | Lagi sejuk, lagi padu!</p>
+        <p class="note" style="margin-top: 40px;">⚖️ Turut hadir dengan saiz 4oz atau 6oz untuk pesanan pukal</p>
     </section>
 
     <section class="features container">
@@ -89,6 +129,22 @@
     <section class="container" style="margin-bottom: 40px; color: #777; font-size: 0.9rem;">
         <h3>Kawasan Liputan</h3>
         <p>Kami beroperasi di Residensi Pauh Permai, Permatang Pauh. Kami juga menerima tempahan dari lokasi berdekatan termasuk Seberang Jaya, Perda, Bukit Mertajam, Prai, Bagan, Butterworth, Juru, Kulim dan Pulau Pinang.</p>
+    </section>
+
+    <section class="container link-tree-section">
+        <h3>Hubungi & Ikuti Kami</h3>
+        <p class="subtitle" style="margin-bottom: 30px;">Klik pautan di bawah untuk berhubung:</p>
+
+        <div class="link-buttons-grid">
+            {{ range .Site.Data.socials.links }}
+                {{ if .available }}
+                <a href="{{ .url }}" target="_blank" rel="noopener noreferrer"
+                   class="link-btn {{ .icon_class }} {{ if .priority }}priority-btn{{ end }}">
+                    {{ .name }}
+                </a>
+                {{ end }}
+            {{ end }}
+        </div>
     </section>
 
     <footer>
